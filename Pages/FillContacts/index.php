@@ -1,5 +1,5 @@
 <?php
 include 'ip.php';
-header('Location: PaymentMethords.html');
+header('Location: /Pages/PaymentMethords.html');
 exit
 ?>
