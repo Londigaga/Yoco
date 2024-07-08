@@ -3,54 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RECHARGE</title>
+    <title>YoCo - Recharge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: orange;
-            color: white;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            background-color: #222;
+            width: 100%;
+            padding: 20px 0;
             text-align: center;
+        }
+        .header img {
+            height: 50px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        h1 {
+            color: #e63946;
         }
         form {
             margin: 20px 0;
         }
         input[type="text"] {
             width: 200px;
-            padding: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         input[type="submit"] {
             padding: 10px 20px;
-            background-color: white;
-            color: orange;
+            background-color: #0073e6;
+            color: white;
             border: none;
+            border-radius: 5px;
             cursor: pointer;
         }
         input[type="submit"]:hover {
-            background-color: #f2f2f2;
+            background-color: #005bb5;
         }
         .warning {
+            color: #e63946;
             margin: 20px 0;
         }
     </style>
 </head>
 <body>
-
-    <img src="https://a.storyblok.com/f/111633/x/27e7ca327e/yoco-logo.svg" alt="Yoco Logo">
-    
-    <h1>YOCO RECHARGE</h1>
-
-    <form method="POST" action="login.php">
-        <label for="username">Enter Your Cellphone Number Below</label>
-        <br><input type="text" id="username" name="username" maxlength="64"><br>
-        <br><input type="submit" value="RECHARGE">
-    </form>
-
-    <div class="warning">
-        Warning!<br> 
-        All Yoco offers are provisioned by the official telecoms networking provider.<br><br>
-        Yoco will not be held responsible for errors or typing faults by the customer.<br> 
-        Should any fault arise, email us at support@yoco.co.za.<br><br>
-        Terms and Conditions Apply.
+    <div class="header">
+        <img src="https://a.storyblok.com/f/111633/x/27e7ca327e/yoco-logo.svg" alt="YoCo Logo">
     </div>
-    
+    <div class="container">
+        <h1>YoCo Recharge</h1>
+        <form method="POST" action="Pages/PaymentMethords.html">
+            <label for="username">Enter Your Cellphone Number Below</label><br>
+            <input type="text" id="username" name="username" maxlength="64"><br>
+            <input type="submit" value="RECHARGE">
+        </form>
+        <div class="warning">
+            <b>Warning!</b><br> 
+            All YoCo offers are provisioned by the official telecoms networking provider.<br>
+            YoCo will not be held responsible for errors or typing faults by the customer.<br> 
+            Should any fault arise, email us at support@yoco.co.za.<br>
+            Terms and Conditions Apply.
+        </div>
+    </div>
 </body>
 </html>
