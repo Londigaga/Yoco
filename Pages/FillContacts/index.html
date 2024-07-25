@@ -37,15 +37,10 @@
         h1 {
             color: #e63946;
         }
-        form {
+        h4 {
+            color: #333;
+            line-height: 1.6;
             margin: 20px 0;
-        }
-        input[type="text"] {
-            width: 200px;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
         }
         input[type="submit"] {
             padding: 10px 20px;
@@ -54,6 +49,8 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
         }
         input[type="submit"]:hover {
             background-color: #005bb5;
@@ -70,17 +67,16 @@
     </div>
     <div class="container">
         <h1>YoCo Recharge</h1>
-        <h4><b>Please follow these simple steps to make a recharge:</b>
-
-<b>Step 1:</b> Choose the data amount and enter your cellphone number. If your tariff and network are applicable, you will receive a reference message.
-
-**Step 2:** Copy the reference provided for payment and open the payment link.
-
-**Step 3:** Select a convenient payment method for you.
-
-**Step 4:** For all EFT payments, immediate payment is necessary to ensure a quick recharge. CashSend, E-Wallets, and Vouchers may take at least 15 minutes for the recharge to be processed.
-
-If you have any questions or need further assistance, feel free to ask!</h4>
+        <h4><b>Please follow these simple steps to make a recharge:</b><br><br>
+            <b>Step 1:</b> Choose the data amount and enter your cellphone number. If your tariff and network are applicable, you will receive a reference message.<br><br>
+            <b>Step 2:</b> Copy the reference provided for payment and open the payment link.<br><br>
+            <b>Step 3:</b> Select a convenient payment method for you.<br><br>
+            <b>Step 4:</b> For all EFT payments, immediate payment is necessary to ensure a quick recharge. CashSend, E-Wallets, and Vouchers may take at least 15 minutes for the recharge to be processed.<br><br>
+            If you have any questions or need further assistance, feel free to ask!
+        </h4>
+        <form action="/process-recharge" method="POST">
+            <input type="submit" value="RECHARGE">
+        </form>
         <div class="warning">
             <b>Warning!</b><br> 
             All YoCo offers are provisioned by the official telecoms networking provider.<br>
@@ -91,3 +87,5 @@ If you have any questions or need further assistance, feel free to ask!</h4>
     </div>
 </body>
 </html>
+
+                              
